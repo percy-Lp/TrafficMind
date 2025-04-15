@@ -183,7 +183,7 @@ class LaneVehicleGenerator(BaseGenerator):
         return ret
 
 if __name__ == "__main__":
-    from world.world_cityflow import World
+    from world.world_sumo import World
     world = World("examples/configs.json", thread_num=1)
     laneVehicle = LaneVehicleGenerator(world, world.intersections[0], ["count"], False, "road")
     for _ in range(100):

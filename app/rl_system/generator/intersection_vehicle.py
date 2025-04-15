@@ -242,7 +242,7 @@ class IntersectionVehicleGenerator():
 
 
 if __name__ == "__main__":
-    from world.world_cityflow import World
+    from world.world_sumo import World
     world = World("examples/configs.json", thread_num=1)
     laneVehicle = IntersectionVehicleGenerator(world, world.intersections[0],
                                                ["vehicle_trajectory", "lane_vehicles", "vehicle_distance"],
